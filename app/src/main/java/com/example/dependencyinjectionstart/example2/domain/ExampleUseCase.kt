@@ -5,6 +5,6 @@ class ExampleUseCase(
 ) {
 
     operator fun invoke() {
-
+        repository.method()
     }
 }
