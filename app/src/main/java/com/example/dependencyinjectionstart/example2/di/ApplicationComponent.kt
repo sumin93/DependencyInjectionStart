@@ -1,6 +1,5 @@
 package com.example.dependencyinjectionstart.example2.di
 
-import android.app.Activity
 import android.content.Context
 import com.example.dependencyinjectionstart.example2.presentation.MainActivity
 import dagger.BindsInstance
