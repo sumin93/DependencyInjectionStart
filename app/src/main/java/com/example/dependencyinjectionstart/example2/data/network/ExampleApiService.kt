@@ -7,13 +7,14 @@ import com.example.dependencyinjectionstart.R
 import javax.inject.Inject
 
 class ExampleApiService @Inject constructor(
-    private val context: Context
+    private val context: Context,
+    private val timeMillis: Long
 ) {
 
     fun method() {
         Log.d(
             LOG_TAG,
-            "ExampleApiService ${context.getString(R.string.app_name)}"
+            "ExampleApiService ${context.getString(R.string.app_name)} $timeMillis"
         )
     }
 
