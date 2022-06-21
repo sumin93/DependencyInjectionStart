@@ -9,5 +9,5 @@ interface NewComponent {
     fun getMouse(): Mouse
     fun getMonitor(): Monitor
 
-    //fun inject(activity: Activity)
+    fun inject(activity: Activity)
 }
