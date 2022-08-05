@@ -2,16 +2,15 @@ package com.example.dependencyinjectionstart.example2.di
 
 import androidx.lifecycle.ViewModel
 import com.example.dependencyinjectionstart.example2.presentation.ExampleViewModel
-import com.example.dependencyinjectionstart.example2.presentation.ExampleViewModel2
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
 
 @Module
-interface ViewModelModule {
+interface ActivityViewModelModule {
 
     @IntoMap
-    @ViewModelKey(ExampleViewModel2::class)
+    @ViewModelKey(ExampleViewModel::class)
     @Binds
-    fun bindExampleViewModel2(impl: ExampleViewModel2): ViewModel
+    fun bindExampleViewModel2(impl: ExampleViewModel): ViewModel
 }

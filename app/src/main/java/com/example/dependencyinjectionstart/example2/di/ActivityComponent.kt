@@ -7,7 +7,7 @@ import dagger.Subcomponent
 import javax.inject.Named
 
 @Subcomponent(
-    modules = [ViewModelModule::class]
+    modules = [ActivityViewModelModule::class]
 )
 interface ActivityComponent {
 
